@@ -1,0 +1,57 @@
+<wicket:extend>
+    <h1>Wicket Oktatóanyag - 4. Lecke: Modellek</h1>
+
+    <div>
+        <h2>Statikus model példa</h2>
+        <p wicket:id="staticModelLabel"></p>
+    </div>
+
+    <div>
+        <h2>ResourceModel példa</h2>
+        <p wicket:id="resourceModelLabel"></p>
+        <a wicket:id="hunLink">magyar</a>
+        <a wicket:id="enLink">english</a>
+    </div>
+
+    <div>
+        <h2>PropertyModel példa</h2>
+        <ul>
+            <li>
+                Név:
+                <span wicket:id="petNameLabel"></span>
+            </li>
+            <li>
+                Fajta:
+                <span wicket:id="petSpeciesLabel"></span>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>CompoundPropertyModel használata megjelenítéshez</h2>
+        <div wicket:id="petDisplay"></div>
+    </div>
+
+    <div>
+        <h2>CompoundPropertyModel használata szerkesztéshez</h2>
+        <div wicket:id="petEditor"></div>
+    </div>
+
+    <div>
+        <h2>LoadableDetachableModel példa</h2>
+        <p wicket:id="heavyLabel"></p>
+    </div>
+
+    <div>
+        <h2>Példa láncolt model használatára</h2>
+        <p wicket:id="chainedModelLabel"></p>
+    </div>
+
+    <div>
+        <h2>Példa egyedi model használatára</h2>
+        <p wicket:id="customModelLabel"></p>
+        <a wicket:id="decLink">csökkentés</a>
+        <a wicket:id="incLink">növelés</a>
+    </div>
+
+</wicket:extend>
