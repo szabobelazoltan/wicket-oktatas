@@ -37,6 +37,7 @@ public class LessonFourPage extends LessonBasePage {
 
         // Példa property model használatára
         IModel<PetVO> petModel = Model.of(new PetVO("Vacak", "dog"));
+
         add(new Label("petNameLabel", new PropertyModel<>(petModel, "name")));
         add(new Label("petSpeciesLabel", new PropertyModel<>(petModel, "species")));
 
@@ -56,21 +57,21 @@ public class LessonFourPage extends LessonBasePage {
         add(new Label("chainedModelLabel", chainingModel));
 
         // Példa egyedi model használatára
-        CustomModel customModel = new CustomModel();
-        Label customModelLabel = new Label("customModelLabel", customModel);
+        CounterModel counterModel = new CounterModel();
+        Label customModelLabel = new Label("customModelLabel", counterModel);
         customModelLabel.setOutputMarkupId(true);
         add(customModelLabel);
         add(new AjaxLink<Void>("decLink") {
             @Override
             public void onClick(AjaxRequestTarget ajaxRequestTarget) {
-                customModel.decrease();
+                counterModel.decrease();
                 ajaxRequestTarget.add(customModelLabel);
             }
         });
         add(new AjaxLink<Void>("incLink") {
             @Override
             public void onClick(AjaxRequestTarget ajaxRequestTarget) {
-                customModel.increase();
+                counterModel.increase();
                 ajaxRequestTarget.add(customModelLabel);
             }
         });

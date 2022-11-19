@@ -1,1 +1,1 @@
-foo-bar
+Én egy heavy objektum vagyok!

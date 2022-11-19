@@ -2,7 +2,8 @@ package com.khb.wicketturotial.lessonfour;
 
 import org.apache.wicket.model.IModel;
 
-public class CustomModel implements IModel<Integer> {
+// Egyedi viselkedéssel rendelkező saját modell
+public class CounterModel implements IModel<Integer> {
     private Integer value = 0;
 
     @Override

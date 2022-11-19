@@ -6,6 +6,7 @@ import org.apache.wicket.model.IModel;
 
 public class LessonFourDisplayPanel extends GenericPanel<PetVO> {
 
+    // A 2. argumentumban megkapja a CompoundPropertyModel példányt.
     public LessonFourDisplayPanel(String id, IModel<PetVO> model) {
         super(id, model);
     }
@@ -14,7 +15,7 @@ public class LessonFourDisplayPanel extends GenericPanel<PetVO> {
     protected void onInitialize() {
         super.onInitialize();
 
-        add(new Label("name"));
-        add(new Label("species"));
+        add(new Label("name"));  // Hivatkozik a PetVO.name mezőre
+        add(new Label("species")); // Hivatkozik a PetVO.species mezőre
     }
 }
