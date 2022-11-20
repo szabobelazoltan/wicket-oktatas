@@ -14,8 +14,7 @@ public class NameVO implements Serializable {
     }
 
     public NameVO(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this("", firstName, lastName);
     }
 
     public NameVO(String title, String firstName, String lastName) {
