@@ -14,3 +14,5 @@ Ezen felül a példakódok futtatható. Aki IntelliJ IDE-t használ, a WicketTut
 4. [Modellek](./src/main/java/com/khb/wicketturotial/lessonfour/README.md)
 5. [Listák és táblázatok](./src/main/java/com/khb/wicketturotial/lessonfive/README.md)
 6. [AJAX-kérések](./src/main/java/com/khb/wicketturotial/lessonsix/README.md)
+
+Készítette: Szabó Béla Zoltán
