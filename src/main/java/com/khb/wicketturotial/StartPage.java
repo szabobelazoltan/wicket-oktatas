@@ -1,5 +1,6 @@
 package com.khb.wicketturotial;
 
+import com.khb.wicketturotial.lessonfive.LessonFiveExamplesPage;
 import com.khb.wicketturotial.lessonfour.LessonFourPage;
 import com.khb.wicketturotial.lessonone.LessonOnePage;
 import com.khb.wicketturotial.lessonthree.LessonThreePage;
@@ -17,5 +18,6 @@ public class StartPage extends WebPage {
         add(new BookmarkablePageLink<>("lessonTwoLink", LessonTwoPage.class));
         add(new BookmarkablePageLink<>("lessonThreeLink", LessonThreePage.class));
         add(new BookmarkablePageLink<>("lessonFourLink", LessonFourPage.class));
+        add(new BookmarkablePageLink<>("lessonFiveLink", LessonFiveExamplesPage.class));
     }
 }

@@ -1,0 +1,21 @@
+<wicket:extend>
+    <div>
+        <h2>ListView használata</h2>
+        <ul>
+            <!-- Az <li wicket:id="*"> miatt a ListView li-ket fog renderelni -->
+            <li wicket:id="nameList">
+                <a wicket:id="nameLink"></a>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Kattintható táblázat használata</h2>
+        <table wicket:id="clickableTable"></table>
+    </div>
+
+    <div>
+        <h2>Rendezhetó táblázat használata</h2>
+        <table wicket:id="sortableTable"></table>
+    </div>
+</wicket:extend>
