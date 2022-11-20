@@ -31,7 +31,7 @@ public class LessonFiveExamplesPage extends LessonBasePage {
 
         // Rendezhető táblázat példányosítása
         SortableNameDataProvider sortableDataProvider = SortableNameDataProvider.create(names);
-        add(CustomSortableTableFactory.createDataTable("sortableTable", sortableDataProvider));
+        add(CustomSortableTableFactory.createDataTable("sortableTable", sortableDataProvider).setOutputMarkupId(true));
     }
 
     @Override
