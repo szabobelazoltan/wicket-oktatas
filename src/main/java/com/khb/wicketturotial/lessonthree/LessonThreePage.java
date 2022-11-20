@@ -36,4 +36,9 @@ public class LessonThreePage extends LessonBasePage {
             }
         });
     }
+
+    @Override
+    protected String getLessonTitle() {
+        return "Wicket Oktatóanyag - 3. Lecke: Komponensek életciklusa";
+    }
 }

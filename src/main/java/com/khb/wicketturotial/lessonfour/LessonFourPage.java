@@ -94,4 +94,9 @@ public class LessonFourPage extends LessonBasePage {
             }
         };
     }
+
+    @Override
+    protected String getLessonTitle() {
+        return "Wicket Oktatóanyag - 4. Lecke: Modellek";
+    }
 }
